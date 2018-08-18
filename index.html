@@ -7,7 +7,7 @@
   <body>
 	  <header>
       <div>
-        <a href="index.html"><img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
+        <a><img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
         <a href="#">Закладки: 0</a>
         <a href="#">Корзина: 0</a>
         <a href="#">Оформить заказ</a>
@@ -39,7 +39,7 @@
 	  </header>
 
     <main>
-      <h1>Интернет-магазин строительных материалов "Техномарт"</h1>
+      <h1 class="visually-hidden">Интернет-магазин строительных материалов "Техномарт"</h1>
 
       <section>
         <h2>Промо блок</h2>
@@ -67,24 +67,24 @@
         </ul>
 
         <div>
-          <section>
+          <section id="slide-1">
             <img src="img/slider.jpg" width="620" height="266" alt="Слайд дрели">
             <h3>Дрели</h3>
             <p>Соседям на радость!</p>
             <a href="catalog.html">Открыть каталог</a>
           </section>
-          <section>
+          <section id="slide-2">
             <img src="img/slider.jpg" width="620" height="266" alt="Слайд доставка">
             <h3>Бесплатная доставка</h3>
             <p>Доставим сегодня!</p>
             <a href="#">Условия доставки</a>
           </section>
 
-          <button>Предыдущий слайд</button>
-          <button>Следующий слайд</button>
+          <button><img src="img/icon-left.svg" width="92" height="167" alt="Предыдущий слайд"></button>
+          <button><img src="img/icon-right.svg" width="92" height="167" alt="Следующий слайд"></button>
           <ul>
-            <li><a href="#">Слайд 1</a></li>
-            <li><a href="#">Слайд 2</a></li>
+            <li><a href="#slide-1">Слайд 1</a></li>
+            <li><a href="#slide-2">Слайд 2</a></li>
           </ul>
         </div>
       </section>
@@ -100,8 +100,8 @@
               <h3><a href="#">Перфоратор BOSCH BFG 9000</a></h3>
               <span>32500 Р.</span>
               <a href="#">25500 Р.</a>
-              <button>купить</button>
-              <button>в закладки</button>
+              <button>Купить</button>
+              <button>В закладки</button>
             </article>
           </li>
           <li>
@@ -110,8 +110,8 @@
               <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
               <span>15500 Р.</span>
               <a href="#">12500 Р.</a>
-              <button>купить</button>
-              <button>в закладки</button>
+              <button>Купить</button>
+              <button>В закладки</button>
             </article>
           </li>
           <li>
@@ -120,8 +120,8 @@
               <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
               <span>30500 Р.</span>
               <a href="#">21500 Р.</a>
-              <button>купить</button>
-              <button>в закладки</button>
+              <button>Купить</button>
+              <button>В закладки</button>
             </article>
           </li>
           <li>
@@ -130,8 +130,8 @@
               <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
               <span>11500 Р.</span>
               <a href="#">9500 Р.</a>
-              <button>купить</button>
-              <button>в закладки</button>
+              <button>Купить</button>
+              <button>В закладки</button>
             </article>
           </li>
         </ul>
@@ -144,42 +144,42 @@
         <ul>
           <li>
             <a href="#">
-              <img src="img/logo-AEG.jpg" width="151" height="96" alt="Логотип">
+              <img src="img/logo-AEG.jpg" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-Bosch.jpg" width="126" height="37" alt="Логотип">
+              <img src="img/logo-Bosch.jpg" width="126" height="37" alt="Bosch">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-DeWALT.jpg" width="146" height="44" alt="Логотип">
+              <img src="img/logo-DeWALT.jpg" width="146" height="44" alt="DeWALT">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-Hitachi.jpg" width="169" height="31" alt="Логотип">
+              <img src="img/logo-Hitachi.jpg" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-Interskol.jpg" width="200" height="88" alt="Логотип">
+              <img src="img/logo-Interskol.jpg" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-LG.jpg" width="121" height="73" alt="Логотип">
+              <img src="img/logo-LG.jpg" width="121" height="73" alt="LG">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-Makita.jpg" width="123" height="40" alt="Логотип">
+              <img src="img/logo-Makita.jpg" width="123" height="40" alt="Makita">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/logo-Metabo.jpg" width="204" height="69" alt="Логотип">
+              <img src="img/logo-Metabo.jpg" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
@@ -187,7 +187,7 @@
 
       <section>
         <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <ul>
           <li><a href="#">Доставка</a></li>
@@ -225,7 +225,7 @@
         <section>
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/map.jpg" width="300" height="158" alt="Схема расположения офиса">
+          <a href="#popup-map"><img src="img/map.jpg" width="300" height="158" alt="Схема расположения офиса"></a>
           <a href="#">Заблудились? Напишите нам</a>
         </section>
       </div>
@@ -233,7 +233,7 @@
 
     <footer>
       <a href="#"><img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт"></a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7(812)555-05-55</a></p>
+      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7(812)555-05-55</a></p>
 
       <nav>
         <ul>
@@ -251,7 +251,7 @@
         </ul>
       </nav>
 
-      <p>© 2010–2018 Компания «Техномарт»<br>Все права защищены</p>
+      <p>© 2010–2018 Компания «Техномарт». Все права защищены</p>
 
       <ul>
         <li><a href="#">Вконтакте</a></li>
@@ -262,5 +262,27 @@
       <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </footer>
+
+    <section id="popup-map">
+      <h2 class="visually-hidden">Всплывающая карта</h2>
+      <button><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
+      <img src="img/big-map.jpg" alt="Крупная схема расположения офиса">
+    </section>
+
+    <section id="write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <button><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
+      <form id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+        <label for="message">Текст письма:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+      </form>
+      <footer>
+        <button type="submit" form="feedback-form">Отправить</button>
+      </footer>
+    </section>
   </body>
 </html>
