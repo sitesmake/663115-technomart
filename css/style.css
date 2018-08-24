@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&subset=cyrillic');
+/* font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+button {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* site-header */
+.site-header-bar {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.site-header-contacts a {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.site-header-contacts p {
+  font-size: 14px;
+}
+
+.user-block {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.site-header-menu {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+/* promo-block */
+.promo-list b {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-list a {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* slider */
+.slider h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slider p {
+  font-size: 18px;
+}
+
+/* popular-products-block */
+.card {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.card h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.card span {
+  font-weight: normal;
+}
+
+/* services-block */
+.services-block p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.delivery-list a {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.delivery-section h3 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.site-content h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.site-content p {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.logistic-companies-list {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* site-footer */
+.footer-menu {
+  font-size: 18px;
+}
+
+.footer-bottom-row {
+  font-size: 16px;
+  line-height: 18px;
+}
