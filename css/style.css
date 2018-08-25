@@ -10,6 +10,13 @@ body {
 .button {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
+}
+
+.button-outline {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 
@@ -21,6 +28,7 @@ body {
 
 .header-logo {
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .bar-bookmarks-link,
@@ -80,6 +88,7 @@ body {
 .promo-list a {
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 /* slider */
@@ -87,6 +96,7 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .slider p {
@@ -97,6 +107,7 @@ body {
 .block-with-items h2 {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .card {
@@ -119,6 +130,7 @@ body {
 .services-block h2 {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 .services-block p {
   font-family: 'PT Sans', Arial, sans-serif;
@@ -133,11 +145,13 @@ body {
 .delivery-section h3 {
   font-size: 36px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .about-site h2 {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .about-site p {
@@ -152,4 +166,45 @@ body {
 .site-contacts h2 {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+}
+
+
+/* =========== catalog.html ============ */
+.breadcrumbs {
+  line-height: 18px;
+}
+
+.heading-products {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* filter-form */
+.filter-form {
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 18px;
+}
+
+.filter-form legend {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* sorting */
+.sorting b {
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 18px;
+}
+
+/* text-block */
+.text-block h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.text-block p {
+  font-family: 'PT Sans', Arial, sans-serif;
 }
