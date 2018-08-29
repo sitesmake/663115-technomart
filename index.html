@@ -48,49 +48,58 @@
 
       <section class="promo-block">
         <h2 class="visually-hidden">Промо блок</h2>
+
+        <div class="promo-grid">
+          <div class="promo-left-container">
+            <ul class="promo-list">
+              <li class="promo-materials">
+                <b>Материалы</b>
+                <a href="#">На любой вкус</a>
+              </li>
+              <li class="promo-product">
+                <b>Инструмент</b>
+                <a href="#">На все случаи</a>
+              </li>
+            </ul>
+
+            <div class="slider">
+              <section id="slide-1">
+                <img src="img/slider-1.jpg" width="620" height="266" alt="Слайд дрели">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </section>
+              <section id="slide-2">
+                <img src="img/slider-2.jpg" width="620" height="266" alt="Слайд перфораторы">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки!</p>
+                <a class="button" href="catalog.html">Открыть каталог</a>
+              </section>
+
+              <button class="slider-next-button"><img src="img/icon-left.svg" width="92" height="167" alt="Предыдущий слайд"></button>
+              <button class="slider-previous-button"><img src="img/icon-right.svg" width="92" height="167" alt="Следующий слайд"></button>
+              <ul class="slider-dots">
+                <li><a href="#slide-1">Слайд 1</a></li>
+                <li><a href="#slide-2">Слайд 2</a></li>
+              </ul>
+            </div>
+        </div>
+
         <ul class="promo-list">
-          <li>
-            <b>Материалы</b>
-            <a href="#">На любой вкус</a>
-          </li>
-          <li>
-            <b>Инструмент</b>
-            <a href="#">На все случаи</a>
-          </li>
-          <li>
+          <li class="promo-technics">
             <b>Техника</b>
             <a href="#">Для стройки</a>
           </li>
-          <li>
+          <li class="promo-sale">
             <b>Скидки 50%</b>
             <a href="#">На 350 товаров</a>
           </li>
-          <li>
+          <li class="promo-delivery">
             <b>Доставка</b>
             <a href="#">Бесплатно</a>
           </li>
         </ul>
 
-        <div class="slider">
-          <section id="slide-1">
-            <img src="img/slider-1.jpg" width="620" height="266" alt="Слайд дрели">
-            <h3>Дрели</h3>
-            <p>Соседям на радость!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </section>
-          <section id="slide-2">
-            <img src="img/slider-2.jpg" width="620" height="266" alt="Слайд перфораторы">
-            <h3>Перфораторы</h3>
-            <p>Настоящие мужские игрушки!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </section>
-
-          <button class="slider-next-button"><img src="img/icon-left.svg" width="92" height="167" alt="Предыдущий слайд"></button>
-          <button class="slider-previous-button"><img src="img/icon-right.svg" width="92" height="167" alt="Следующий слайд"></button>
-          <ul class="slider-dots">
-            <li><a href="#slide-1">Слайд 1</a></li>
-            <li><a href="#slide-2">Слайд 2</a></li>
-          </ul>
         </div>
       </section>
 
@@ -223,7 +232,7 @@
         </div>
       </section>
 
-      <div>
+      <div class="about-site-container">
         <section class="about-site">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -246,24 +255,28 @@
     </main>
 
     <footer class="site-footer">
-      <a class="footer-logo" href="#">Техномарт</a>
-      <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7(812)555-05-55</a></p>
+      <div class="footer-top-row">
+        <div class="footer-logo-block">
+          <a class="footer-logo" href="#">Техномарт</a>
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7(812)555-05-55</a></p>
+        </div>
 
-      <nav class="footer-menu">
-        <ul class="footer-menu-site">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="footer-menu-catalog">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
-      </nav>
+        <nav class="footer-menu">
+          <ul class="footer-menu-site">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-menu-catalog">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="footer-contacts-row">
         <p class="copyright-text">© 2010–2018 Компания «Техномарт». Все права защищены</p>

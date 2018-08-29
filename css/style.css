@@ -56,6 +56,7 @@ body {
 }
 
 .site-header-bar {
+  display: flex;
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
@@ -82,6 +83,7 @@ body {
 }
 
 .bar-search input {
+  width: 287px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
   line-height: 42px;
@@ -109,7 +111,16 @@ body {
   display: inline-block;
 }
 
+.bar-bookmarks-link {
+  width: 150px;
+}
+
+.bar-cart-link {
+  width: 132px;
+}
+
 .bar-order-link {
+  width: 150px;
   background-color: #63a63e;
 }
 
@@ -145,11 +156,20 @@ body {
   background-color: #ba2732;
 }
 
+.site-header-content {
+  display: flex;
+}
+
 .header-slogan {
+  width: 310px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+}
+
+.header-contacts {
+  width: 320px;
 }
 
 .header-contacts a {
@@ -207,6 +227,12 @@ a.user-link:hover {
   box-shadow: 0px 5px 0px 0px #293449;
 }
 
+.site-header-menu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
 .site-header-menu a {
   color: #fff;
   text-decoration: none;
@@ -229,6 +255,14 @@ a.user-link:hover {
   color: #fff;
 }
 
+.footer-top-row {
+  display: flex;
+}
+
+.footer-logo-block {
+  width: 350px;
+}
+
 .footer-logo {
   font-size: 30px;
   line-height: 63px;
@@ -247,6 +281,18 @@ a.user-link:hover {
   color: #fff;
 }
 
+/* .footer-menu {
+  width: 590px;
+} */
+
+.footer-menu > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .footer-menu a {
   text-decoration: none;
 }
@@ -260,6 +306,10 @@ a.user-link:hover {
   text-decoration: none;
 }
 
+.footer-menu-site {
+  display: flex;
+}
+
 .footer-menu-site a {
   color: #fff;
 }
@@ -269,8 +319,25 @@ a.user-link:hover {
 }
 
 .footer-contacts-row {
+  display: flex;
   font-size: 16px;
   line-height: 18px;
+}
+
+.copyright-text {
+  width: 280px;
+}
+
+.social-list {
+  width: 350px;
+}
+
+.footer-feedback {
+  width: 160px;
+}
+
+.footer-developer-info {
+  width: 160px;
 }
 
 .footer-feedback a,
@@ -330,19 +397,39 @@ a.user-link:hover {
 
 /* =========== index.html ============ */
 /* promo-block */
-.promo-list li:nth-child(1) {
+.promo-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-left-container .promo-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-list li {
+  width: 300px;
+}
+
+.promo-list .promo-materials {
   background-color: #ffbf47;
 }
-.promo-list li:nth-child(2) {
+.promo-list .promo-product {
   background-color: #3bbce3;
 }
-.promo-list li:nth-child(3) {
+.promo-list .promo-technics {
   background-color: #dc91d8;
 }
-.promo-list li:nth-child(4) {
+.promo-list .promo-sale {
   background-color: #8ed78f;
 }
-.promo-list li:nth-child(5) {
+.promo-list .promo-delivery {
   background-color: #ffc047;
 }
 
@@ -383,8 +470,12 @@ a.user-link:hover {
 
 /* popular-products-block */
 .block-with-items header {
+  display: flex;
+  justify-content: space-between;
   background-color: #f9f5f0;
+  padding: 25px;
 }
+
 .block-with-items h2 {
   font-size: 30px;
   line-height: 30px;
@@ -393,11 +484,21 @@ a.user-link:hover {
   font-weight: normal;
 }
 
+.block-with-items > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
+  width: 220px;
 }
 
 .card:hover {
@@ -472,9 +573,16 @@ a.user-link:hover {
 }
 
 /* brands-list */
+.brands-list li {
+  width: 220px;
+}
+
 .brands-list a {
   display: inline-block;
   border: 1px solid #e4e4e4;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .brands-list a:hover {
@@ -502,6 +610,17 @@ a.user-link:hover {
   font-family: 'PT Sans', Arial, sans-serif;
 }
 
+.delivery-section {
+  display: flex;
+}
+
+.delivery-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+
 .delivery-list a {
   font-weight: bold;
   font-size: 21px;
@@ -509,6 +628,8 @@ a.user-link:hover {
   text-decoration: none;
   background-color: #32425c;
   color: #fff;
+  display: inline-block;
+  width: 100%;
 }
 
 .delivery-list a:hover {
@@ -524,6 +645,14 @@ a.user-link:hover {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.about-site-container {
+  display: flex;
+}
+
+.about-site {
+  width: 640px;
 }
 
 .about-site h2 {
