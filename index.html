@@ -9,16 +9,18 @@
   <body>
 	  <header class="site-header">
       <div class="site-header-bar">
-        <a class="header-logo">Техномарт</a>
-        <form class="bar-search" action="catalog.html" method="get">
-          <input type="text" id="search-query" name="search-query" placeholder="Поиск:">
-        </form>
-        <a class="bar-bookmarks-link" href="#">Закладки: 0</a>
-        <a class="bar-cart-link" href="#">Корзина: 0</a>
-        <a class="bar-order-link" href="#">Оформить заказ</a>
+        <div class="container">
+          <a class="header-logo">Техномарт</a>
+          <form class="bar-search" action="catalog.html" method="get">
+            <input type="text" id="search-query" name="search-query" placeholder="Поиск:">
+          </form>
+          <a class="bar-bookmarks-link" href="#">Закладки: 0</a>
+          <a class="bar-cart-link" href="#">Корзина: 0</a>
+          <a class="bar-order-link" href="#">Оформить заказ</a>
+        </div>
       </div>
 
-      <div class="site-header-content">
+      <div class="site-header-content container">
         <p class="header-slogan">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="header-contacts">
           <a href="tel:+78125550555">+7(812)555-05-55</a>
@@ -30,7 +32,7 @@
         </div>
       </div>
 
-		  <nav class="site-header-menu">
+		  <nav class="site-header-menu container">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -46,7 +48,7 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов "Техномарт"</h1>
 
-      <section class="promo-block">
+      <section class="promo-block container">
         <h2 class="visually-hidden">Промо блок</h2>
 
         <div class="promo-grid">
@@ -103,7 +105,7 @@
         </div>
       </section>
 
-      <section class="block-with-items">
+      <section class="block-with-items container">
         <header>
           <h2>Популярные товары</h2>
           <a class="button" href="#">Все популярные товары</a>
@@ -154,7 +156,7 @@
         </ul>
       </section>
 
-      <section class="block-with-items">
+      <section class="block-with-items container">
         <header>
           <h2>Популярные производители</h2>
           <a class="button" href="#">Все производители</a>
@@ -205,34 +207,36 @@
       </section>
 
       <section class="services-block">
-        <header>
-          <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        </header>
+        <div class="container">
+          <header>
+            <h2>Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </header>
 
-        <div class="delivery-section">
-          <ul class="delivery-list">
-            <li><a class="active" href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-          </ul>
+          <div class="delivery-section">
+            <ul class="delivery-list">
+              <li><a class="active" href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
 
-          <section>
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </section>
-          <section>
-            <h3>Гарантия</h3>
-            <p>Официальная гарантия от всех производителей!</p>
-          </section>
-          <section>
-            <h3>Кредит</h3>
-            <p>Беспроцентный кредит на все покупки!</p>
-          </section>
+            <section>
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </section>
+            <section>
+              <h3>Гарантия</h3>
+              <p>Официальная гарантия от всех производителей!</p>
+            </section>
+            <section>
+              <h3>Кредит</h3>
+              <p>Беспроцентный кредит на все покупки!</p>
+            </section>
+          </div>
         </div>
       </section>
 
-      <div class="about-site-container">
+      <div class="about-site-container container">
         <section class="about-site">
           <h2>Компания "Техномарт"</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -255,7 +259,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-top-row">
+      <div class="footer-top-row container">
         <div class="footer-logo-block">
           <a class="footer-logo" href="#">Техномарт</a>
           <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7(812)555-05-55</a></p>
@@ -278,7 +282,7 @@
         </nav>
       </div>
 
-      <div class="footer-contacts-row">
+      <div class="footer-contacts-row container">
         <p class="copyright-text">© 2010–2018 Компания «Техномарт». Все права защищены</p>
 
         <ul class="social-list">

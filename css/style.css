@@ -7,6 +7,16 @@ body {
 
 }
 
+.visually-hidden {
+  display: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 940px;
+}
+
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
@@ -56,10 +66,13 @@ body {
 }
 
 .site-header-bar {
-  display: flex;
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
+}
+
+.site-header-bar .container {
+  display: flex;
 }
 
 .header-logo {
@@ -158,6 +171,7 @@ body {
 
 .site-header-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .header-slogan {
@@ -415,6 +429,8 @@ a.user-link:hover {
 
 .promo-list li {
   width: 300px;
+  min-height: 123px;
+  margin-bottom: 20px;
 }
 
 .promo-list .promo-materials {
