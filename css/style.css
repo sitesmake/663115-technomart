@@ -333,9 +333,13 @@ a.user-link:hover {
 }
 
 .footer-contacts-row {
-  display: flex;
   font-size: 16px;
   line-height: 18px;
+  background-color: #293449;
+}
+
+.footer-contacts-row .container {
+  display: flex;
 }
 
 .copyright-text {
@@ -640,7 +644,7 @@ a.user-link:hover {
 .delivery-list a {
   font-weight: bold;
   font-size: 21px;
-  line-height: 30px;
+  line-height: 60px;
   text-decoration: none;
   background-color: #32425c;
   color: #fff;
@@ -665,10 +669,11 @@ a.user-link:hover {
 
 .about-site-container {
   display: flex;
+  justify-content: space-around;
 }
 
 .about-site {
-  width: 640px;
+  width: 560px;
 }
 
 .about-site h2 {
@@ -685,6 +690,10 @@ a.user-link:hover {
 .about-site ul {
   font-size: 18px;
   line-height: 20px;
+}
+
+.site-contacts {
+  width: 300px;
 }
 
 .site-contacts h2 {
