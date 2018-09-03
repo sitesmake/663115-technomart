@@ -21,7 +21,9 @@ body {
 .button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 3px;
   text-transform: uppercase;
   background-color: #ee3643;
   text-decoration: none;
@@ -64,6 +66,7 @@ body {
 /* =========== site-header ============ */
 .site-header {
   background-color: #f3f7f8;
+  padding-bottom: 60px;
 }
 
 .site-header-bar {
@@ -125,6 +128,10 @@ body {
   display: inline-block;
 }
 
+.bar-order-link {
+  text-align: center;
+}
+
 .bar-bookmarks-link {
   width: 150px;
 }
@@ -172,19 +179,25 @@ body {
 
 .site-header-content {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  padding-top: 35px;
+  padding-bottom: 45px;
 }
 
 .header-slogan {
-  width: 310px;
+  width: 200px;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  padding-left: 52px;
+  padding-right: 68px;
+  margin: 0;
 }
 
 .header-contacts {
-  width: 320px;
+  width: 270px;
+  text-align: center;
 }
 
 .header-contacts a {
@@ -192,27 +205,39 @@ body {
   line-height: 21px;
   color: #e9292a;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   border: 3px solid #fff;
+  padding-left: 20px;
+  line-height: 39px;
 }
 
 .header-contacts p {
   font-size: 14px;
   color: #32425c;
+  margin-top: 7px;
 }
 
 .user-block {
   font-size: 21px;
   line-height: 45px;
+  margin-left: auto;
+  display: flex;
+  align-items: flex-start;
 }
 
 .login-link,
 .registration-link,
 .user-link {
   text-decoration: none;
-  display: inline-block;
   color: black;
   background-color: #fff;
+  line-height: 45px;
+  padding: 0 22px;
+}
+
+.login-link {
+  margin-right: 10px;
+  padding-left: 48px;
 }
 
 .orders-link,
@@ -244,13 +269,27 @@ a.user-link:hover {
 
 .site-header-menu ul {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+  list-style: none;
+  /* justify-content: space-around; */
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
 }
 
 .site-header-menu a {
   color: #fff;
   text-decoration: none;
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* .site-header-menu a:first-child {
+  padding-left: 52px;
+} */
+a.first-child-bug {
+  padding-left: 52px;
 }
 
 .site-header-menu a:hover {
@@ -268,6 +307,7 @@ a.user-link:hover {
   font-size: 18px;
   background-color: #32425c;
   color: #fff;
+  margin-top: 86px;
 }
 
 .footer-top-row {
@@ -291,6 +331,12 @@ a.user-link:hover {
   text-transform: uppercase;
 }
 
+.footer-address {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
 .footer-address a {
   text-decoration: none;
   color: #fff;
@@ -300,12 +346,21 @@ a.user-link:hover {
   width: 590px;
 } */
 
+.footer-menu {
+  margin-top: 40px;
+  width: 590px;
+}
+
 .footer-menu > ul {
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  justify-content: flex-end;
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-menu li {
+  margin-left: 60px;
 }
 
 .footer-menu a {
@@ -329,6 +384,10 @@ a.user-link:hover {
   color: #fff;
 }
 
+ul.footer-menu-catalog {
+  margin-top: 40px;
+}
+
 .footer-menu-catalog a {
   color: #ffd180;
 }
@@ -337,6 +396,8 @@ a.user-link:hover {
   font-size: 16px;
   line-height: 18px;
   background-color: #293449;
+  padding-top: 34px;
+  padding-bottom: 30px;
 }
 
 .footer-contacts-row .container {
@@ -345,18 +406,26 @@ a.user-link:hover {
 
 .copyright-text {
   width: 280px;
+  margin: 0;
 }
 
 .social-list {
   width: 350px;
+  margin: 0;
+  text-align: center;
+  list-style: none;
 }
 
 .footer-feedback {
-  width: 160px;
+  width: 150px;
+  margin: 0;
+  padding-left: 10px;
 }
 
 .footer-developer-info {
-  width: 160px;
+  width: 120px;
+  margin: 0;
+  padding-left: 40px;
 }
 
 .footer-feedback a,
@@ -416,6 +485,10 @@ a.user-link:hover {
 
 /* =========== index.html ============ */
 /* promo-block */
+.promo-block {
+  padding-top: 60px;
+}
+
 .promo-grid {
   display: flex;
   justify-content: space-between;
@@ -427,15 +500,17 @@ a.user-link:hover {
 }
 
 .promo-list {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .promo-list li {
-  width: 300px;
-  min-height: 123px;
+  width: 275px;
+  min-height: 98px;
   margin-bottom: 20px;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 
 .promo-list .promo-materials {
@@ -462,11 +537,15 @@ a.user-link:hover {
 
 .promo-list a {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
+  width: 135px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   background-color: rgba(0,0,0,0.1);
+  display: block;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .promo-list a:hover {
@@ -483,16 +562,52 @@ a.user-link:hover {
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  position: absolute;
+  color: white;
+  margin-top: 27px;
+  margin-left: 24px;
 }
 
 .slider p {
   font-size: 18px;
+  position: absolute;
+  color: white;
+  margin-left: 24px;
+  margin-top: 65px;
+}
+
+.slider a.button {
+  position: absolute;
+  width: 195px;
+  margin-left: 24px;
+  margin-top: 206px;
+}
+
+.slider-next-button,
+.slider-previous-button {
+  padding: 0;
+  position: absolute;
+  height: 40px;
+  margin-top: -152px;
+  margin-left: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-previous-button {
+  margin-left: 578px;
 }
 
 /* popular-products-block */
+.block-with-items {
+  margin-top: 20px;
+}
+
 .block-with-items header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
   padding: 25px;
 }
@@ -503,15 +618,21 @@ a.user-link:hover {
   text-transform: uppercase;
   color: #32425c;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .block-with-items > ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
+  margin: 20px 0 0px;
   padding: 0;
+}
+
+.block-with-items .header-button {
+  width: 253px;
 }
 
 .card {
@@ -519,11 +640,21 @@ a.user-link:hover {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  width: 220px;
+  width: 218px;
+  border: 1px solid #eaeaea;
+  padding-bottom: 20px;
 }
 
 .card:hover {
   box-shadow: 0px 10px 25px rgba(41,52,73,0.5);
+}
+
+.card img {
+  margin-top: 30px;
+}
+
+.product-title {
+  margin-top: 52px;
 }
 
 .product-title a {
@@ -533,18 +664,28 @@ a.user-link:hover {
   line-height: 20px;
   text-decoration: none;
   color: #000;
+  padding: 0 30px;
+  text-align: center;
+  display: block;
 }
 
 .card strike {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   color: #999999;
+  margin-top: 16px;
+  display: block;
+  text-align: center;
 }
 
 .card a.price {
   background-color: #ee3643;
   color: #fff;
   text-decoration: none;
+  display: block;
+  margin: 12px 42px 0px 42px;
+  text-align: center;
+  line-height: 38px;
 }
 
 .card button {
@@ -561,6 +702,7 @@ a.user-link:hover {
   color: #fff;
   background-color: #63a63e;
   box-shadow: 0px 5px 0px 0px #367315;
+                                    display: none;
 }
 
 .card .buy-button:hover {
@@ -576,6 +718,7 @@ a.user-link:hover {
   color: #32425c;
   background-color: #fff;
   border: 3px solid #63a63e;
+                                    display: none;
 }
 
 .card .favorites-button:hover {
@@ -591,11 +734,13 @@ a.user-link:hover {
 .card .new {
   background-color: #ff5257;
   color: white;
+                                    display: none;
 }
 
 /* brands-list */
 .brands-list li {
   width: 220px;
+  margin-top: 20px;
 }
 
 .brands-list a {
@@ -619,6 +764,9 @@ a.user-link:hover {
 /* services-block */
 .services-block {
   background-color: #f4f7f9;
+  margin-top: 85px;
+  padding-top: 65px;
+  padding-bottom: 70px;
 }
 
 .services-block h2 {
@@ -629,14 +777,16 @@ a.user-link:hover {
 }
 .services-block p {
   font-family: 'PT Sans', Arial, sans-serif;
+  width: 400px;
 }
 
 .delivery-section {
   display: flex;
+  margin-top: 38px;
 }
 
 .delivery-list {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   width: 240px;
@@ -649,8 +799,8 @@ a.user-link:hover {
   text-decoration: none;
   background-color: #32425c;
   color: #fff;
-  display: inline-block;
-  width: 100%;
+  display: block;
+  padding-left: 20px;
 }
 
 .delivery-list a:hover {
@@ -662,6 +812,10 @@ a.user-link:hover {
   background-color: #fff;
 }
 
+.delivery-section section {
+  padding-left: 80px;
+}
+
 .delivery-section h3 {
   font-size: 36px;
   line-height: 36px;
@@ -670,7 +824,8 @@ a.user-link:hover {
 
 .about-site-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 
 .about-site {
@@ -693,6 +848,11 @@ a.user-link:hover {
   line-height: 20px;
 }
 
+.about-site .button {
+  width: 220px;
+  display: block;
+}
+
 .site-contacts {
   width: 300px;
 }
@@ -702,6 +862,11 @@ a.user-link:hover {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.site-contacts .button {
+  width: 100%;
+  display: block;
 }
 
 
@@ -803,7 +968,7 @@ a.user-link:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
