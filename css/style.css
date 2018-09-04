@@ -240,6 +240,10 @@ body {
   padding-left: 48px;
 }
 
+.user-link {
+
+}
+
 .orders-link,
 .admin-link {
   font-size: 16px;
@@ -686,7 +690,19 @@ ul.footer-menu-catalog {
   margin: 12px 42px 0px 42px;
   text-align: center;
   line-height: 38px;
+  position: relative;
 }
+
+.card a.price:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -19px;
+    width: 0;
+    height: 0;
+    border: 19px solid white;
+    border-left-color: #ee3643;
+  }
 
 .card button {
   font-family: 'Cuprum', Arial, sans-serif;
@@ -877,6 +893,9 @@ ul.footer-menu-catalog {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 .breadcrumbs a {
@@ -892,6 +911,7 @@ ul.footer-menu-catalog {
   color: #32425c;
   background-color: #f2f6f8;
   text-transform: uppercase;
+  padding-left: 30px;
 }
 
 .catalog-section {
