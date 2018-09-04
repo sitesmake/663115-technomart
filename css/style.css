@@ -647,6 +647,8 @@ ul.footer-menu-catalog {
   width: 218px;
   border: 1px solid #eaeaea;
   padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -750,7 +752,13 @@ ul.footer-menu-catalog {
 .card .new {
   background-color: #ff5257;
   color: white;
-                                    display: none;
+  text-indent: -1000px;
+  position: absolute;
+  background: url(../img/new-flag.png) no-repeat;
+  width: 60px;
+  height: 59px;
+  top: -1px;
+  right: -1px;
 }
 
 /* brands-list */
