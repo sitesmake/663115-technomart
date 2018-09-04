@@ -705,21 +705,37 @@ ul.footer-menu-catalog {
     border-left-color: #ee3643;
   }
 
+.card-buttons {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top:44px;
+  width: 100%;
+  background: white;
+}
+
+.card:hover .card-buttons {
+  display: flex;
+}
+
 .card button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 35px;
+  line-height: 32px;
   display: inline-block;
   border-radius: 3px;
   border: none;
   text-transform: uppercase;
+  width: 135px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .card .buy-button {
   color: #fff;
   background-color: #63a63e;
   box-shadow: 0px 5px 0px 0px #367315;
-                                    display: none;
+  margin-bottom: 11px;
 }
 
 .card .buy-button:hover {
@@ -735,7 +751,6 @@ ul.footer-menu-catalog {
   color: #32425c;
   background-color: #fff;
   border: 3px solid #63a63e;
-                                    display: none;
 }
 
 .card .favorites-button:hover {
