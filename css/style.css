@@ -104,7 +104,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   text-transform: uppercase;
   background-color: #ee3643;
-  color: white;
+  color: #fff;
   line-height: 42px;
   display: inline-block;
   width: 220px;
@@ -146,7 +146,7 @@ input[type="radio"].visually-hidden {
 
 .bar-search svg {
   position: absolute;
-  fill: white;
+  fill: #fff;
   opacity: 0.3;
   top: 12px;
   left: 16px;
@@ -158,7 +158,7 @@ input[type="radio"].visually-hidden {
 
 .bar-search:active svg {
   opacity: 1;
-  fill: red;
+  fill: #f00;
 }
 
 
@@ -167,7 +167,7 @@ input[type="radio"].visually-hidden {
 .bar-order-link {
   font-size: 17px;
   line-height: 42px;
-  color: white;
+  color: #fff;
   text-decoration: none;
   display: inline-block;
 }
@@ -326,7 +326,7 @@ input[type="radio"].visually-hidden {
 .login-link,
 .registration-link {
   text-decoration: none;
-  color: black;
+  color: #000;
   background-color: #fff;
   line-height: 45px;
   padding: 0 22px;
@@ -371,7 +371,7 @@ input[type="radio"].visually-hidden {
 
 .user-link {
   text-decoration: none;
-  color: black;
+  color: #000;
   background-color: #fff;
   line-height: 45px;
   display: block;
@@ -507,7 +507,7 @@ a.first-child-bug {
   font-size: 30px;
   line-height: 63px;
   background-color: #ee3643;
-  color: white;
+  color: #fff;
   display: inline-block;
   text-decoration: none;
   box-shadow: 0px 5px 0px 0px #b52933;
@@ -689,7 +689,7 @@ ul.footer-menu-catalog {
   left: 50%;
   width: 620px;
   margin-left: -310px;
-  background: white;
+  background: #fff;
 }
 
 .popup-form {
@@ -879,7 +879,7 @@ ul.footer-menu-catalog {
 
 .promo-list .new {
   background-color: #ff5257;
-  color: white;
+  color: #fff;
   text-indent: -1000px;
   position: absolute;
   background: url(../img/new-flag.png) no-repeat;
@@ -1102,7 +1102,7 @@ ul.footer-menu-catalog {
     right: -19px;
     width: 0;
     height: 0;
-    border: 19px solid white;
+    border: 19px solid #fff;
     border-left-color: #ee3643;
   }
 
@@ -1112,7 +1112,7 @@ ul.footer-menu-catalog {
   position: absolute;
   top:34px;
   width: 100%;
-  background: white;
+  background: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -1168,7 +1168,7 @@ ul.footer-menu-catalog {
 
 .card .new {
   background-color: #ff5257;
-  color: white;
+  color: #fff;
   text-indent: -1000px;
   position: absolute;
   background: url(../img/new-flag.png) no-repeat;
@@ -1195,12 +1195,12 @@ ul.footer-menu-catalog {
 }
 
 .brands-list a:hover {
-  border-color: white;
+  border-color: #fff;
   box-shadow: 0px 10px 25px rgba(41,52,73,0.5);
 }
 
 .brands-list a:active {
-  border-color: white;
+  border-color: #fff;
   box-shadow: 0px 4px 10px rgba(41,52,73,0.5);
 }
 
@@ -1461,7 +1461,7 @@ ul.footer-menu-catalog {
     left:30px;
     width:4px;
     height:4px;
-    border:8px solid white;
+    border:8px solid #fff;
     background:#ababab;
     cursor:pointer;
     border-radius:50%;
