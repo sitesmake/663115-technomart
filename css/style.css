@@ -703,17 +703,33 @@ ul.footer-menu-catalog {
   margin: 0;
 }
 
+.popup-form p:first-child {
+  margin-right: 20px;
+}
+
 .popup-form input {
   width: 220px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+}
+
+.message-field {
+  padding-top: 22px;
 }
 
 .message-field textarea {
   width: 460px;
+  box-sizing: border-box;
+  height: 115px;
+  border: 2px solid #d7dcde;
+  padding: 12px 14px;
 }
 
 .popup-form label {
   font-size: 18px;
   line-height: 18px;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .popup-form input {
@@ -741,6 +757,52 @@ ul.footer-menu-catalog {
   width: 460px;
 }
 
+
+.product-added-popup {
+  top: 120px;
+  left: 50%;
+  width: 620px;
+  margin-left: -310px;
+  background: #fff;
+}
+
+.product-added-popup h2 {
+  font-size: 30px;
+  font-weight: normal;
+  padding: 65px 80px 65px 180px;
+  margin: 0;
+  position: relative;
+}
+
+.product-added-popup h2::before {
+  content: "";
+  position: absolute;
+  top: 42px;
+  left: 80px;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon-mark.svg);
+}
+
+.product-added-popup footer {
+  padding: 40px 80px;
+}
+
+.product-added-popup .button {
+  width: 220px;
+  /* line-height: 38px; */
+}
+
+.product-added-popup .button-checkout {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.product-added-popup .continue-button {
+  line-height: 36px;
+  background-color: #fff;
+  color: #000;
+}
 
 
 /* =========== index.html ============ */
