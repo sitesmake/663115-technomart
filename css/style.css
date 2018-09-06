@@ -1438,6 +1438,90 @@ ul.footer-menu-catalog {
 }
 
 
+
+/* Чекбоксы и радиокнопки */
+.filter-form ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.checkbox,
+.radio {
+  position: relative;
+  padding-left: 35px;
+}
+
+.checkbox input,
+.radio input {
+  overflow: hidden;
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.checkbox label,
+.radio label {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+/* Состояние покоя */
+.checkbox label::before,
+.radio label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  /* background-image: url("https://monosnap.com/file/gVjvOjHtpNSZA8F0aUQ5qdBmqUfBxt.png"); */
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.checkbox label::before {
+  width: 23px;
+  height: 23px;
+  background: url(../img/checkbox-off.svg);
+}
+
+.radio label::before {
+  width: 25px;
+  height: 25px;
+  background: url(../img/radio-off.svg);
+}
+
+/* Состояние выбранного */
+.checkbox input:checked + label::before {
+  background: url(../img/checkbox-on.svg);
+  width: 27px;
+}
+
+.radio input:checked + label::before {
+  background: url(../img/radio-on.svg);
+}
+
+/* Состояние наведения */
+.checkbox label:hover::before,
+.radio label:hover::before {
+  opacity: 1;
+}
+
+/* Состояние заблокированного */
+.checkbox input:disabled + label::before,
+.radio input:disabled + label::before {
+  opacity: 0.1;
+}
+
+
+
+
 /* products-section */
 .products-section {
   width: 700px;
