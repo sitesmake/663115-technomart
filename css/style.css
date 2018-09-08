@@ -124,7 +124,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bar-search input {
-  width: 239px;
+  width: 222px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 17px;
   line-height: 40px;
@@ -132,6 +132,7 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
   color: #fff;
   padding-left: 48px;
+  padding-right: 0;
 }
 
 .bar-search input:hover {
@@ -207,7 +208,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bar-cart-link {
-  width: 132px;
+  width: 150px;
   position: relative;
   text-indent: 44px;
 }
@@ -365,10 +366,126 @@ input[type="radio"].visually-hidden {
 
 
 /* user-block */
+
 .user-block {
   margin-left: auto;
   font-size: 21px;
   position: relative;
+}
+
+.user-id {
+  display: flex;
+  background-color: #fff;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.user-name {
+  position: relative;
+  padding: 0px 10px 0px 40px;
+  flex-grow: 1;
+  color: #000;
+  text-decoration: none;
+  min-width: 210px;
+  line-height: 45px;
+
+  /*
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 4px;
+  padding-right: 30px; */
+}
+
+.user-name::before {
+  content: "";
+  position: absolute;
+  background: url(../img/icon-user.svg);
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  left: 12px;
+  opacity: 0.2;
+}
+
+.user-name:hover {
+  color: #f00;
+}
+
+.user-name:hover::before {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.user-logout {
+  position: relative;
+  padding: 10px;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.user-logout::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.user-logout:hover {
+  color: #f00;
+}
+
+.user-logout:hover::before {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.user-links {
+  display: flex;
+  align-items: baseline;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.user-links li {
+  position: relative;
+}
+
+.user-links li:not(:last-child) {
+  padding-right: 30px;
+}
+
+.user-links li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.user-links a {
+  color: #32425c;
+}
+
+.user-links a:hover {
+  color: #ee3643;
+}
+
+.user-links a:active {
+  color: #32425c;
+  opacity: 0.2;
+}
+
+/* .user-block {
+
 }
 
 .user-block a:hover {
@@ -380,17 +497,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-link {
-  text-decoration: none;
-  color: #000;
-  background-color: #fff;
-  line-height: 45px;
-  display: block;
-  width: 300px;
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 48px;
-  margin-bottom: 4px;
-  padding-right: 30px;
+
 }
 
 .user-link::before {
@@ -452,7 +559,7 @@ input[type="radio"].visually-hidden {
   background: #000;
   top: 6px;
   left: 10px;
-}
+} */
 
 
 
@@ -484,9 +591,6 @@ input[type="radio"].visually-hidden {
 /* .site-header-menu a:first-child {
   padding-left: 52px;
 } */
-a.first-child-bug {
-  padding-left: 52px;
-}
 
 .site-header-menu a:hover {
   background-color: #293449;
