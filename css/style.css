@@ -389,13 +389,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   min-width: 210px;
   line-height: 45px;
-
-  /*
-  box-sizing: border-box;
-  position: relative;
-  padding-left: 48px;
-  margin-bottom: 4px;
-  padding-right: 30px; */
 }
 
 .user-name::before {
@@ -409,12 +402,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
-.user-name:hover {
-  color: #f00;
+.user-name:hover::before {
+  opacity: 1;
 }
 
-.user-name:hover::before {
-  background-color: rgba(0, 0, 0, 1);
+.user-name:active::before {
+  opacity: 0.2;
 }
 
 .user-logout {
@@ -429,17 +422,14 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.user-logout:hover {
-  color: #f00;
+  width: 22px;
+  height: 17px;
+  background: url(../img/icon-logout.svg);
+  opacity: 0.2;
 }
 
 .user-logout:hover::before {
-  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
 }
 
 .user-links {
@@ -704,7 +694,7 @@ ul.footer-menu-catalog {
 }
 
 .copyright-text {
-  width: 280px;
+  width: 270px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -739,17 +729,15 @@ ul.footer-menu-catalog {
 }
 
 .footer-feedback {
-  width: 150px;
+  width: 190px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 10px;
 }
 
 .footer-developer-info {
-  width: 120px;
+  width: 110px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 40px;
 }
 
 .footer-feedback a,
@@ -1125,7 +1113,7 @@ ul.footer-menu-catalog {
 
 /* popular-products-block */
 .block-with-items {
-
+  margin-top: 20px;
 }
 
 .block-with-items header {
@@ -1148,7 +1136,6 @@ ul.footer-menu-catalog {
 
 .block-with-items > ul {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
   margin: 20px 0 0px;
@@ -1159,16 +1146,23 @@ ul.footer-menu-catalog {
   width: 253px;
 }
 
+.popular-products-list li {
+  margin-right: 20px;
+  width: 220px;
+}
+
+.popular-products-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* cards */
 .card {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
-  width: 218px;
   border: 1px solid #eaeaea;
-  padding-bottom: 20px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .card:hover {
@@ -1204,12 +1198,12 @@ ul.footer-menu-catalog {
   text-align: center;
 }
 
-.card a.price {
+.card .price {
   background-color: #ee3643;
   color: #fff;
   text-decoration: none;
   display: block;
-  margin: 12px 42px 0px 42px;
+  margin: 12px 42px 20px 42px;
   text-align: center;
   line-height: 38px;
   position: relative;
@@ -1305,6 +1299,11 @@ ul.footer-menu-catalog {
 .brands-list li {
   width: 220px;
   margin-top: 20px;
+  margin-right: 20px;
+}
+
+.brands-list li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .brands-list a {
@@ -1486,8 +1485,8 @@ ul.footer-menu-catalog {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li {
@@ -1543,6 +1542,7 @@ ul.footer-menu-catalog {
   background-color: #f7f3ec;
   display: block;
   text-transform: uppercase;
+  padding-left: 18px;
 }
 
 .filter-form legend {
@@ -1716,6 +1716,13 @@ ul.footer-menu-catalog {
 }
 
 
+.button-show {
+  line-height: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 140px;
+}
+
 
 
 /* products-section */
@@ -1736,6 +1743,7 @@ ul.footer-menu-catalog {
 
 .sorting b {
   margin-right: auto;
+  font-weight: normal;
 }
 
 .sorting-links,
@@ -1791,7 +1799,7 @@ ul.footer-menu-catalog {
 /* products-list */
 .products-list {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-flex-start;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 0;
@@ -1799,7 +1807,22 @@ ul.footer-menu-catalog {
   padding-left: 0;
 }
 
+.products-list li {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 220px;
+}
+
+.products-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+
 /* pagination */
+.pagination {
+  margin-top: 50px;
+}
+
 .pagination ul {
   margin-top: 0;
   margin-bottom: 0;
