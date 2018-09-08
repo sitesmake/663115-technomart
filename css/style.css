@@ -129,9 +129,13 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 40px;
   border: none;
-  background: none;
+  background-color: #293449;
   color: #fff;
   padding-left: 48px;
+}
+
+.bar-search input:hover {
+  background-color: #212a3a;
 }
 
 .bar-search input:focus {
@@ -139,25 +143,31 @@ input[type="radio"].visually-hidden {
   color: #000;
 }
 
-.bar-search input::placeholder {
-  color: #fff;
-}
+.bar-search input::-webkit-input-placeholder { color: #fff; }
+.bar-search input::-moz-placeholder { color: #fff; }
+.bar-search input:-ms-input-placeholder { color: #fff; }
+.bar-search input::placeholder { color: #fff }
+
+.bar-search input:focus::-webkit-input-placeholder { color: #000; }
+.bar-search input:focus::-moz-placeholder { color: #000; }
+.bar-search input:focus:-ms-input-placeholder { color: #000; }
+.bar-search input:focus::placeholder { color: #000 }
 
 .bar-search svg {
   position: absolute;
   fill: #fff;
   opacity: 0.3;
   top: 12px;
-  left: 16px;
+  left: 17px;
 }
 
-.bar-search:hover svg {
+.bar-search input:hover + svg {
   opacity: 1;
 }
 
-.bar-search:active svg {
+.bar-search input:focus + svg {
   opacity: 1;
-  fill: #f00;
+  fill: #ee3643;
 }
 
 
