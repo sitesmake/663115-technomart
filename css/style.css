@@ -106,7 +106,6 @@ input[type="radio"].visually-hidden {
   background-color: #ee3643;
   color: #fff;
   line-height: 42px;
-  display: inline-block;
   width: 220px;
   text-align: center;
   box-shadow: 0px 5px 0px 0px #b52933;
@@ -270,7 +269,8 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
   padding-left: 52px;
   padding-right: 68px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-contacts {
@@ -291,7 +291,6 @@ input[type="radio"].visually-hidden {
 
 .header-contacts a {
   font-size: 21px;
-  line-height: 21px;
   color: #e9292a;
   text-decoration: none;
   display: block;
@@ -304,6 +303,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   color: #32425c;
   margin-top: 7px;
+  margin-bottom: 0;
 }
 
 
@@ -346,7 +346,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   top: 14px;
   left: 12px;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .login-link:hover::before {
@@ -517,7 +517,6 @@ a.first-child-bug {
 }
 
 .footer-address {
-  margin: 0;
   margin-top: 40px;
   margin-bottom: 50px;
 }
@@ -540,8 +539,9 @@ a.first-child-bug {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .footer-menu li {
@@ -591,7 +591,8 @@ ul.footer-menu-catalog {
 
 .copyright-text {
   width: 280px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .social-list {
@@ -625,13 +626,15 @@ ul.footer-menu-catalog {
 
 .footer-feedback {
   width: 150px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 10px;
 }
 
 .footer-developer-info {
   width: 120px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 40px;
 }
 
@@ -700,7 +703,8 @@ ul.footer-menu-catalog {
 }
 
 .popup-form p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .popup-form p:first-child {
@@ -770,7 +774,8 @@ ul.footer-menu-catalog {
   font-size: 30px;
   font-weight: normal;
   padding: 65px 80px 65px 180px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -823,8 +828,9 @@ ul.footer-menu-catalog {
 
 .promo-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .promo-list li {
@@ -1061,6 +1067,9 @@ ul.footer-menu-catalog {
 
 .product-title {
   margin-top: 52px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0px 30px;
 }
 
 .product-title a {
@@ -1070,9 +1079,6 @@ ul.footer-menu-catalog {
   line-height: 20px;
   text-decoration: none;
   color: #000;
-  padding: 0 30px;
-  text-align: center;
-  display: block;
 }
 
 .card strike {
@@ -1147,7 +1153,9 @@ ul.footer-menu-catalog {
 
 .card .buy-button:active {
   background-color: #518534;
-  box-shadow: none;
+  /* box-shadow: none; */
+  transform: translateY(2px);
+  box-shadow: 0px 3px 0px 0px #367315;
 }
 
 .card .favorites-button {
@@ -1218,10 +1226,14 @@ ul.footer-menu-catalog {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .services-block p {
   font-family: 'PT Sans', Arial, sans-serif;
   width: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .delivery-section {
@@ -1242,8 +1254,9 @@ ul.footer-menu-catalog {
 
 .delivery-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   width: 240px;
 }
 
@@ -1293,10 +1306,14 @@ ul.footer-menu-catalog {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-site p {
   font-family: 'PT Sans', Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-site ul {
@@ -1351,10 +1368,12 @@ ul.footer-menu-catalog {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .breadcrumbs li {
@@ -1504,7 +1523,8 @@ ul.footer-menu-catalog {
 /* Чекбоксы и радиокнопки */
 .filter-form ul {
   list-style: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 
@@ -1660,14 +1680,16 @@ ul.footer-menu-catalog {
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* pagination */
 .pagination ul {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
   display: flex;
 }
@@ -1703,7 +1725,8 @@ ul.footer-menu-catalog {
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 68px;
 }
 
