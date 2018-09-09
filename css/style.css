@@ -420,8 +420,8 @@ input[type="radio"].visually-hidden {
 .user-logout::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 10px;
+  top: 13px;
+  left: 9px;
   width: 22px;
   height: 17px;
   background: url(../img/icon-logout.svg);
@@ -437,7 +437,7 @@ input[type="radio"].visually-hidden {
   align-items: baseline;
   margin-top: 7px;
   margin-bottom: 0;
-  padding-left: 19px;
+  padding-left: 18px;
   list-style: none;
   font-size: 16px;
 }
@@ -447,13 +447,13 @@ input[type="radio"].visually-hidden {
 }
 
 .user-links li:not(:last-child) {
-  padding-right: 30px;
+  padding-right: 32px;
 }
 
 .user-links li:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 9px;
   right: 13px;
   width: 4px;
   height: 4px;
@@ -703,12 +703,12 @@ input[type="radio"].visually-hidden {
 }
 
 .social-list {
-  margin: 0 auto;
+  margin: -1px auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 0;
+  padding-left: 6px;
 }
 
 .social-list a {
@@ -939,32 +939,32 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-list li {
-  width: 275px;
+  width: 278px;
   min-height: 102px;
   margin-bottom: 20px;
-  padding-left: 25px;
+  padding-left: 22px;
   padding-top: 21px;
   position: relative;
 }
 
 .promo-list .promo-materials {
-  background: url(../img/icon-1.svg) 212px 30px no-repeat;
+  background: url(../img/icon-1.svg) 212px 31px no-repeat;
   background-color: #ffbf47;
 }
 .promo-list .promo-product {
-  background: url(../img/icon-2.svg) 197px 30px no-repeat;
+  background: url(../img/icon-2.svg) 197px 33px no-repeat;
   background-color: #3bbce3;
 }
 .promo-list .promo-technics {
-  background: url(../img/icon-3.svg) 190px 30px no-repeat;
+  background: url(../img/icon-3.svg) 190px 31px no-repeat;
   background-color: #dc91d8;
 }
 .promo-list .promo-sale {
-  background: url(../img/icon-4.svg) 190px 30px no-repeat;
+  background: url(../img/icon-4.svg) 196px 26px no-repeat;
   background-color: #8ed78f;
 }
 .promo-list .promo-delivery {
-  background: url(../img/icon-5.svg) 190px 30px no-repeat;
+  background: url(../img/icon-5.svg) 190px 32px no-repeat;
   background-color: #ffc047;
 }
 
@@ -986,6 +986,11 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin-top: 13px;
   border-radius: 3px;
+  margin-left: 3px;
+}
+
+.right-promo-col a {
+  margin-left: 1px;
 }
 
 .promo-list .new {
@@ -1016,8 +1021,8 @@ input[type="radio"].visually-hidden {
 
 .slide {
   position: relative;
-  padding: 25px 27px;
-  height: 216px;
+  padding: 24px;
+  height: 218px;
 }
 
 .slide img {
@@ -1045,6 +1050,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   margin-top: 0; /* задать отступ до заголовка */
   margin-bottom: 0;
+  padding-left: 1px;
 }
 
 .slide .button {
@@ -1052,6 +1058,7 @@ input[type="radio"].visually-hidden {
   bottom: 22px;
   left: 25px;
   width: 195px;
+  text-indent: 4px;
 }
 
 .slider-next-button,
@@ -1420,6 +1427,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
 }
 
+.delivery-section p {
+  width: 280px;
+}
+
+.delivery-section .narrow-p {
+  width: 180px;
+}
+
 .about-site-container {
   display: flex;
   justify-content: space-between;
@@ -1447,13 +1462,17 @@ input[type="radio"].visually-hidden {
   padding-bottom: 24px;
 }
 
+.about-site .narrow-p {
+  width: 400px;
+}
+
 .about-site ul {
   font-size: 18px;
   line-height: 20px;
   padding-left: 0;
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 34px;
+  margin-top: -3px;
+  margin-bottom: 37px;
 }
 
 .about-site li {
@@ -1469,7 +1488,7 @@ input[type="radio"].visually-hidden {
   height: 2px;
   background: #ee3643;
   left: 0px;
-  top: 7px;
+  top: 9px;
 }
 
 .about-site .button {
@@ -1492,7 +1511,8 @@ input[type="radio"].visually-hidden {
 
 .site-contacts p {
   margin-top: 25px;
-  margin-bottom: 55px;
+  margin-bottom: 31px;
+  padding-right: 120px;
 }
 
 .site-contacts .button {
@@ -1515,6 +1535,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   margin-top: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .breadcrumbs li {
@@ -1526,6 +1547,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs li:first-child {
   padding-left: 0;
   background: none;
+  margin-left: -2px;
 }
 
 .breadcrumbs a {
