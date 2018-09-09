@@ -1349,11 +1349,9 @@ input[type="radio"].visually-hidden {
 
 /* services-block */
 .services-block {
-  background: url(../img/bg-truck.png) no-repeat 697px 260px;
   background-color: #f4f7f9;
   margin-top: 65px;
   padding-top: 65px;
-  padding-bottom: 104px;
 }
 
 .services-block h2 {
@@ -1385,6 +1383,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 230px;
   top: -35px;
+}
+
+.delivery-section section {
+  min-width: 620px;
+  min-height: 286px;
+  background: url(../img/bg-truck.png) no-repeat bottom 0px right 1px;
 }
 
 .delivery-list {
