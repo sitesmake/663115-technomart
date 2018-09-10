@@ -789,8 +789,27 @@ input[type="radio"].visually-hidden {
   top: 120px;
   left: 50%;
   width: 940px;
+  min-height: 446px;
   margin-left: -470px;
 }
+
+.popup-map p {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.popup-map iframe {
+  position: absolute;
+  z-index: 2;
+  border: 0;
+}
+
+.popup-map .close-button {
+  z-index: 3;
+}
+
 
 .popup-write-us {
   top: 120px;
