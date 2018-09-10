@@ -820,7 +820,7 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-form {
-  padding: 50px 85px 35px 85px;
+  padding: 46px 80px 28px 80px;
   display: flex;
   flex-wrap: wrap;
   width: 460px;
@@ -836,34 +836,12 @@ input[type="radio"].visually-hidden {
 }
 
 .popup-form input {
-  width: 220px;
-  padding: 12px 14px;
-  box-sizing: border-box;
-}
-
-.message-field {
-  padding-top: 22px;
-}
-
-.message-field textarea {
-  width: 460px;
-  box-sizing: border-box;
-  height: 115px;
-  border: 2px solid #d7dcde;
-  padding: 12px 14px;
-}
-
-.popup-form label {
-  font-size: 18px;
-  line-height: 18px;
-  display: block;
-  margin-bottom: 12px;
-}
-
-.popup-form input {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   border: 2px solid #d7dcde;
+  width: 220px;
+  padding: 8px 14px;
+  box-sizing: border-box;
 }
 
 .popup-form input:hover {
@@ -874,8 +852,31 @@ input[type="radio"].visually-hidden {
   border-color: #ee3643;
 }
 
+.message-field {
+  padding-top: 21px;
+}
+
+.message-field label {
+  padding-left: 1px;
+}
+
+.message-field textarea {
+  width: 460px;
+  box-sizing: border-box;
+  height: 115px;
+  border: 2px solid #d7dcde;
+  padding: 9px 14px;
+}
+
+.popup-form label {
+  font-size: 18px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 9px;
+}
+
 .popup-write-us footer {
-  padding-top: 37px;
+  padding-top: 36px;
   padding-bottom: 37px;
 }
 
