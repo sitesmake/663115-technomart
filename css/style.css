@@ -898,7 +898,7 @@ input[type="radio"].visually-hidden {
 .product-added-popup h2 {
   font-size: 30px;
   font-weight: normal;
-  padding: 65px 80px 65px 180px;
+  padding: 68px 80px 71px 180px;
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
@@ -907,15 +907,15 @@ input[type="radio"].visually-hidden {
 .product-added-popup h2::before {
   content: "";
   position: absolute;
-  top: 42px;
-  left: 80px;
+  top: 48px;
+  left: 81px;
   width: 66px;
   height: 66px;
   background-image: url(../img/icon-mark.svg);
 }
 
 .product-added-popup footer {
-  padding: 40px 80px;
+  padding: 36px 80px;
 }
 
 .product-added-popup .button {
@@ -926,6 +926,7 @@ input[type="radio"].visually-hidden {
 .product-added-popup .button-checkout {
   display: inline-block;
   margin-right: 16px;
+  padding-top: 2px;
 }
 
 .product-added-popup .continue-button {
