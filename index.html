@@ -275,7 +275,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a href="#popup-map"><img src="img/map.jpg" width="300" height="158" alt="Схема расположения офиса"></a>
-          <a class="button" href="#">Заблудились? Напишите нам</a>
+          <a class="button write-us-link" href="#">Заблудились? Напишите нам</a>
         </section>
       </div>
     </main>
@@ -335,13 +335,13 @@
       </div>
     </footer>
 
-    <section class="popup popup-map visually-hidden" id="popup-map">
+    <section class="popup popup-map display-none" id="popup-map">
       <h2 class="visually-hidden">Всплывающая карта</h2>
       <img src="img/big-map.jpg" alt="Крупная схема расположения офиса" width="940" height="446">
       <button class="close-button"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
     </section>
 
-    <section class="popup popup-write-us visually-hidden" id="write-us">
+    <section class="popup popup-write-us display-none" id="write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="popup-form" id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -362,5 +362,7 @@
       </footer>
       <button class="close-button"><img src="img/icon-close.svg" width="21" height="21" alt="Закрыть"></button>
     </section>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
