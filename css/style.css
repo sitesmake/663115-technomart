@@ -180,7 +180,6 @@ input[type="radio"].visually-hidden {
   line-height: 42px;
   color: #fff;
   text-decoration: none;
-  display: inline-block;
 }
 
 .bar-order-link {
@@ -319,11 +318,23 @@ input[type="radio"].visually-hidden {
 
 
 .authorization-block {
-  font-size: 21px;
-  line-height: 45px;
   margin-left: auto;
   display: flex;
   align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.authorization-block a {
+  font-size: 21px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  line-height: 45px;
+  padding: 0 24px;
+  display: inline-block;
 }
 
 .authorization-block a:hover {
@@ -334,16 +345,7 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
-.login-link,
-.registration-link {
-  text-decoration: none;
-  color: #000;
-  background-color: #fff;
-  line-height: 45px;
-  padding: 0 24px;
-}
-
-.login-link {
+.authorization-block .login-link {
   margin-right: 12px;
   padding-left: 45px;
   position: relative;
@@ -358,10 +360,16 @@ input[type="radio"].visually-hidden {
   top: 14px;
   left: 12px;
   opacity: 0.3;
+  filter: grayscale(100%);
 }
 
 .login-link:hover::before {
   opacity: 1;
+  filter: grayscale(0%);
+}
+
+.login-link:active::before {
+  opacity: 0.2;
 }
 
 
@@ -391,6 +399,10 @@ input[type="radio"].visually-hidden {
   line-height: 42px;
 }
 
+.user-name:active {
+  opacity: 0.3;
+}
+
 .user-name::before {
   content: "";
   position: absolute;
@@ -400,14 +412,16 @@ input[type="radio"].visually-hidden {
   top: 13px;
   left: 14px;
   opacity: 0.2;
+  filter: grayscale(100%);
 }
 
 .user-name:hover::before {
   opacity: 1;
+  filter: grayscale(0%);
 }
 
 .user-name:active::before {
-  opacity: 0.2;
+  /* opacity: 0.2; */
 }
 
 .user-logout {
@@ -426,10 +440,12 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background: url(../img/icon-logout.svg);
   opacity: 0.2;
+  filter: grayscale(100%);
 }
 
 .user-logout:hover::before {
   opacity: 1;
+  filter: grayscale(0%);
 }
 
 .user-links {
@@ -613,7 +629,7 @@ input[type="radio"].visually-hidden {
   padding-top: 2px;
   background-color: #ee3643;
   color: #fff;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   box-shadow: 0px 5px 0px 0px #b52933;
   width: 220px;
@@ -861,6 +877,9 @@ input[type="radio"].visually-hidden {
 }
 
 .message-field textarea {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   width: 460px;
   box-sizing: border-box;
   height: 115px;
@@ -916,15 +935,14 @@ input[type="radio"].visually-hidden {
 
 .product-added-popup footer {
   padding: 36px 80px;
+  display: flex;
 }
 
 .product-added-popup .button {
   width: 220px;
-  /* line-height: 38px; */
 }
 
 .product-added-popup .button-checkout {
-  display: inline-block;
   margin-right: 16px;
   padding-top: 2px;
 }
@@ -1277,7 +1295,6 @@ input[type="radio"].visually-hidden {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 32px;
-  display: inline-block;
   border-radius: 3px;
   border: none;
   text-transform: uppercase;
@@ -1291,6 +1308,8 @@ input[type="radio"].visually-hidden {
   background-color: #63a63e;
   box-shadow: 0px 5px 0px 0px #367315;
   margin-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 0;
 }
 
 .card .buy-button:hover {
@@ -1299,9 +1318,24 @@ input[type="radio"].visually-hidden {
 
 .card .buy-button:active {
   background-color: #518534;
-  /* box-shadow: none; */
   transform: translateY(2px);
   box-shadow: 0px 3px 0px 0px #367315;
+}
+
+.card .buy-button::before {
+  content: "";
+  position: absolute;
+  margin-left: -33px;
+  margin-top: 7px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  opacity: 0.3;
+}
+
+.card .buy-button:hover::before,
+.card .buy-button:active::before {
+  opacity: 1;
 }
 
 .card .favorites-button {
@@ -1403,7 +1437,7 @@ input[type="radio"].visually-hidden {
   height: 262px;
   position: absolute;
   left: 230px;
-  top: -35px;
+  top: -14px;
 }
 
 .delivery-section section {
@@ -1450,6 +1484,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   margin-top: 29px;
   margin-bottom: 25px;
+  color: #32425c;
 }
 
 .delivery-section p {
@@ -1628,6 +1663,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.filter-form hr {
+  border: 0;
+  height: 1px;
+  background: #e5e5e5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .price-controls input {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: normal;
@@ -1639,6 +1682,10 @@ input[type="radio"].visually-hidden {
 }
 
 /* price-slider */
+.filter-form .price-fieldset {
+  margin-bottom: 14px;
+}
+
 .price-fieldset legend {
   padding-top: 11px;
   margin-left: -2px;
@@ -1713,21 +1760,13 @@ input[type="radio"].visually-hidden {
 }
 
 
-.developers-fieldset {
+.filter-form .developers-fieldset {
   position: relative;
-}
-
-.developers-fieldset::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 1px;
-  background-color: #e5e5e5;
-  top: 13px;
+  margin-bottom: 12px;
 }
 
 .developers-fieldset legend {
-  padding-top: 31px;
+  padding-top: 17px;
   margin-left: -2px;
 }
 
@@ -1818,17 +1857,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.power-fieldset::before {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 1px;
-  background-color: #e5e5e5;
-  top: 12px;
-}
-
 .power-fieldset legend {
-  padding-top: 31px;
+  padding-top: 18px;
   margin-left: -2px;
 }
 
@@ -1888,7 +1918,6 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #cacaca;
   border-bottom: 1px dotted #ee3643;
-  display: inline-block;
   line-height: 12px;
 }
 
