@@ -594,9 +594,9 @@ input[type="radio"].visually-hidden {
   padding-right: 30px;
 }
 
-/* .site-header-menu a:first-child {
-  padding-left: 52px;
-} */
+.site-header-menu li:first-child {
+  padding-left: 23px;
+}
 
 .site-header-menu a:hover {
   background-color: #293449;
