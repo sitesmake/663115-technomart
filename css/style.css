@@ -1,4 +1,3 @@
-/* =========== shared ============ */
 body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
@@ -90,7 +89,6 @@ input[type="radio"].visually-hidden {
 
 
 
-/* =========== site-header ============ */
 .site-header {
   background-color: #f3f7f8;
   padding-bottom: 65px;
@@ -386,8 +384,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* user-block */
-
 .user-block {
   margin-left: auto;
   font-size: 21px;
@@ -433,9 +429,7 @@ input[type="radio"].visually-hidden {
   filter: grayscale(0%);
 }
 
-.user-name:active::before {
-  /* opacity: 0.2; */
-}
+
 
 .user-logout {
   position: relative;
@@ -538,7 +532,6 @@ input[type="radio"].visually-hidden {
 
 
 
-/* =========== site-footer ============ */
 .site-footer {
   font-size: 18px;
   background-color: #32425c;
@@ -701,7 +694,6 @@ input[type="radio"].visually-hidden {
 
 
 
-/* =========== popups ============ */
 .popup {
   border-top: 7px solid #ff5257;
   position: fixed;
@@ -875,8 +867,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* =========== index.html ============ */
-/* promo-block */
+
 .promo-block {
   padding-top: 59px;
 }
@@ -975,7 +966,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0,0,0,0.3);
 }
 
-/* slider */
+
 .slider {
   position: relative;
   width: 620px;
@@ -1084,7 +1075,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* block-with-items */
+
 .block-with-items header {
   display: flex;
   justify-content: space-between;
@@ -1116,7 +1107,7 @@ input[type="radio"].visually-hidden {
   width: 253px;
 }
 
-/* popular-products-block */
+
 .popular-products-block {
   margin-top: 36px;
 }
@@ -1139,7 +1130,7 @@ input[type="radio"].visually-hidden {
   margin-right: 0;
 }
 
-/* cards */
+
 .card {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
@@ -1298,7 +1289,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
-/* brands */
+
 .popular-brands-block {
   margin-top: 22px;
 }
@@ -1334,7 +1325,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-/* services-block */
+
 .services-block {
   background-color: #f4f7f9;
   margin-top: 65px;
@@ -1518,7 +1509,7 @@ input[type="radio"].visually-hidden {
 
 
 
-/* =========== catalog.html ============ */
+
 .breadcrumbs {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
@@ -1568,7 +1559,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* filter-form */
+
 .filter-form {
   font-family: 'PT Sans', Arial, sans-serif;
   line-height: 18px;
@@ -1617,7 +1608,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-/* price-slider */
+
 .filter-form .price-fieldset {
   margin-bottom: 14px;
 }
@@ -1705,7 +1696,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* Чекбоксы и радиокнопки */
+
 .filter-form ul {
   list-style: none;
   margin-top: 3px;
@@ -1744,14 +1735,13 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-/* Состояние покоя */
+
 .checkbox label::before,
 .radio label::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 0;
-  /* background-image: url("https://monosnap.com/file/gVjvOjHtpNSZA8F0aUQ5qdBmqUfBxt.png"); */
   transform: translateY(-50%);
   opacity: 0.8;
 }
@@ -1768,7 +1758,6 @@ input[type="radio"].visually-hidden {
   background: url(../img/radio-off.svg);
 }
 
-/* Состояние выбранного */
 .checkbox input:checked + label::before {
   background: url(../img/checkbox-on.svg);
   width: 27px;
@@ -1778,13 +1767,11 @@ input[type="radio"].visually-hidden {
   background: url(../img/radio-on.svg);
 }
 
-/* Состояние наведения */
 .checkbox label:hover::before,
 .radio label:hover::before {
   opacity: 1;
 }
 
-/* Состояние заблокированного */
 .checkbox input:disabled + label::before,
 .radio input:disabled + label::before {
   opacity: 0.1;
@@ -1807,7 +1794,6 @@ input[type="radio"].visually-hidden {
   margin-top: 68px;
 }
 
-/* Состояние фокуса */
 .checkbox input:focus + label::before,
 .radio input:focus + label::before {
   opacity: 1;
@@ -1817,12 +1803,10 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* products-section */
 .products-section {
   width: 700px;
 }
 
-/* sorting */
 .sorting {
   font-family: 'PT Sans', Arial, sans-serif;
   line-height: 18px;
@@ -1889,7 +1873,6 @@ input[type="radio"].visually-hidden {
   fill: #ee3643;
 }
 
-/* products-list */
 .products-list {
   display: flex;
   align-items: flex-start;
@@ -1911,7 +1894,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* pagination */
 .pagination {
   margin-top: 40px;
 }
@@ -1950,7 +1932,6 @@ input[type="radio"].visually-hidden {
   padding-right: 30px;
 }
 
-/* text-block */
 .text-block {
   background-color: #f2f6f8;
   margin-top: 60px;
@@ -1975,7 +1956,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* forms */
 .display-none {
   display: none;
 }
