@@ -1819,6 +1819,15 @@ input[type="radio"].visually-hidden {
   margin-top: 68px;
 }
 
+/* Состояние фокуса */
+.checkbox input:focus + label::before,
+.radio input:focus + label::before {
+  opacity: 1;
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 
 /* products-section */
 .products-section {
