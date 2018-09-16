@@ -30,6 +30,7 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -1738,6 +1739,7 @@ input[type="radio"].visually-hidden {
   width: 1px;
   height: 1px;
   border: 0;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
 }
