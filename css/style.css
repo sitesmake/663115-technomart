@@ -131,7 +131,7 @@ input[type="radio"].visually-hidden {
 }
 
 .bar-search input {
-  width: 214px;
+  width: 212px;
   margin: 0;
   padding: 12px 10px 12px 48px;
   font-family: 'Cuprum', Arial, sans-serif;
@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 .header-contacts p {
   font-size: 14px;
   color: #32425c;
-  margin-top: 3px;
+  margin-top: 4px;
   margin-bottom: 0;
 }
 
@@ -404,7 +404,7 @@ input[type="radio"].visually-hidden {
 
 .user-name {
   position: relative;
-  padding: 11px 4px 10px 46px;
+  padding: 11px 3px 10px 47px;
   flex-grow: 1;
   color: #000;
   text-decoration: none;
@@ -466,7 +466,7 @@ input[type="radio"].visually-hidden {
   align-items: baseline;
   margin-top: 7px;
   margin-bottom: 0;
-  padding-left: 18px;
+  padding-left: 19px;
   list-style: none;
   font-size: 16px;
 }
@@ -903,7 +903,7 @@ input[type="radio"].visually-hidden {
   min-height: 102px;
   margin-bottom: 20px;
   padding-left: 22px;
-  padding-top: 21px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -1118,7 +1118,7 @@ input[type="radio"].visually-hidden {
 
 /* popular-products-block */
 .popular-products-block {
-  margin-top: 34px;
+  margin-top: 36px;
 }
 
 .popular-products-block h2 {
@@ -1624,7 +1624,6 @@ input[type="radio"].visually-hidden {
 
 .price-fieldset legend {
   padding-top: 11px;
-  margin-left: -2px;
 }
 
 .range-filter {
@@ -1703,7 +1702,6 @@ input[type="radio"].visually-hidden {
 
 .developers-fieldset legend {
   padding-top: 17px;
-  margin-left: -2px;
 }
 
 
@@ -1799,7 +1797,6 @@ input[type="radio"].visually-hidden {
 
 .power-fieldset legend {
   padding-top: 18px;
-  margin-left: -2px;
 }
 
 .button-show {
@@ -1895,7 +1892,7 @@ input[type="radio"].visually-hidden {
 /* products-list */
 .products-list {
   display: flex;
-  align-items: flex-flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   list-style: none;
   margin-top: 0;
