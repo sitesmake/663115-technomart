@@ -109,8 +109,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ee3643;
   color: #fff;
-  line-height: 39px;
-  padding-top: 3px;
+  line-height: 24px;
+  padding-top: 11px;
+  padding-bottom: 7px;
   width: 220px;
   text-align: center;
   box-shadow: 0px 5px 0px 0px #b52933;
@@ -548,8 +549,9 @@ input[type="radio"].visually-hidden {
 
 .footer-logo {
   font-size: 30px;
-  line-height: 61px;
-  padding-top: 2px;
+  line-height: 30px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   background-color: #ee3643;
   color: #fff;
   display: block;
